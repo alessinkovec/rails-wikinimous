@@ -1,0 +1,8 @@
+<article>
+  <h1><%= @article.title %></h1>
+  <p><%= @article.content %></p>
+  <%= link_to "Edit this article mofo", edit_article_path %>
+  <h3>
+    <strong><%= link_to "Destroy this article", @article, method: 'delete', data: { confirm: "Are you totally unequivocally sure broshamus?" } %></strong>
+  </h3>
+</article>
